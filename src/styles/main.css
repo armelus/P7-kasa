@@ -159,6 +159,7 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  align-items: flex-start;
 }
 @media screen and (min-width: 769px) {
   .collapse-fiche-container {
@@ -268,20 +269,6 @@ main {
     margin: 40px 100px 49px 100px;
   }
 }
-.header-container Link {
-  display: flex;
-  align-items: flex-start;
-  margin: 0;
-  width: 9rem;
-}
-@media screen and (min-width: 769px) {
-  .header-container Link {
-    width: 13.2rem;
-  }
-}
-.header-container Link img {
-  width: 100%;
-}
 .header-container .header-nav {
   display: flex;
   align-items: center;
@@ -315,6 +302,20 @@ main {
 }
 .header-container .header-nav-link-home:hover, .header-container .header-nav-link-home:focus, .header-container .header-nav-link-about:hover, .header-container .header-nav-link-about:focus {
   text-decoration-line: underline;
+}
+.header-container .header-logo {
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  width: 9rem;
+}
+@media screen and (min-width: 769px) {
+  .header-container .header-logo {
+    width: 13.2rem;
+  }
+}
+.header-container .header-logo-img {
+  width: 100%;
 }
 
 .gallery-container {
@@ -638,6 +639,17 @@ main {
   align-items: baseline;
 }
 
+.profile-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+@media screen and (min-width: 769px) {
+  .profile-container {
+    flex-direction: column;
+  }
+}
+
 .rate-comp {
   display: flex;
   justify-content: space-between;
@@ -775,6 +787,41 @@ main {
 }
 .errorLinkHome:hover, .errorLinkHome:focus {
   text-decoration-line: underline;
+}
+
+.item-tag__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 769px) {
+  .item-tag__container {
+    flex-direction: row;
+  }
+}
+.item-tag__element {
+  margin-top: 20px;
+}
+@media screen and (min-width: 769px) {
+  .item-tag__element:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+.item-tag__collapse {
+  width: 100%;
+}
+@media screen and (min-width: 769px) {
+  .item-tag__collapse {
+    margin: 4% auto 0;
+  }
+}
+.item-tag__panels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 4%;
 }
 
 /*# sourceMappingURL=main.css.map */
