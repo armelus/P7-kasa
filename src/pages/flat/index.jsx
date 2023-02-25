@@ -6,7 +6,8 @@ import Collapse from '../../components/Collapse'
 import TagCard from '../../components/TagCard/TagCard'
 
 export default function Flat() {
-  const { logement } = useLoaderData()
+  const { logement } = useLoaderData();
+  const { host } = logement;
   const slide = logement.pictures
   const equipments = logement && logement.equipments
   const equipment =
@@ -32,8 +33,8 @@ export default function Flat() {
           <div className="profile-container">
             <div className="profile redText">
               <Host
-                hostName={logement.host.name}
-                hostPicture={logement.host.picture}
+                hostName={host.name}
+                hostPicture={host.picture}
               />
             </div>
             <div className="rate-container">

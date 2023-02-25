@@ -1,11 +1,11 @@
 
-export default function Host(props) {
+export default function Host({hostName, hostPicture}) {
  
     return (
 		<aside className="host-comp">
-			<div className="host-name">{props.hostName}</div>
+			<div className="host-name">{hostName}</div>
 			<div className="hostPicture">
-				<img src={props.hostPic} alt={props.id} />
+				<img src={hostPicture} alt={hostName} />
 			</div>
 		</aside>
 	);
